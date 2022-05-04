@@ -1,25 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import SearchMovies from './SearchMovies'
+const App = () => {
+  return ( 
+          <div className="box-border container mx-auto mt-24 px-8">
+            <h1 className="flex justify-center text-4xl font-extrabold mb-8">Movie Search App</h1>
+            <SearchMovies className="mx-auto"/>
+          </div> );
 }
-
+ 
 export default App;
